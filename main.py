@@ -9,15 +9,15 @@ from selenium.webdriver.common.keys import Keys
 
 
 # The account you want to check
-account = ""
+account = environ.toCheck
 
 # Chrome executable
 chrome_binary = r"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"   # Add your path here
 
 
 def login(driver):
-    username = ""   # Your username
-    password = ""   # Your password
+    username = environ.username   # Your username
+    password = environ.password   # Your password
 
     # Load page
     driver.get("https://www.instagram.com/accounts/login/")
